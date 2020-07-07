@@ -3,7 +3,6 @@ using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading;
 
-/* foundation for homework */
 namespace A2_TextAdventure
 {
     class ExampleEndlessLoop
@@ -28,6 +27,7 @@ namespace A2_TextAdventure
             InputLoop();
         }
 
+        // Runs methods and enables input and exiting
         static void InputLoop()
         {
             while (true)
@@ -50,6 +50,7 @@ namespace A2_TextAdventure
             Console.WriteLine("Goodbye.");
         }
 
+        // calculates room number
         static void Calculator()
         {
             ReverseValue = Value;
@@ -70,9 +71,10 @@ namespace A2_TextAdventure
             {
                 Value = Value - 3;
             }
-
         }
 
+        // Checks for direction errors by varifying Value.
+        // If Value is not present in ApprocedValues, Value assums its previous Value. 
         static void RoomErrorChecker()
         {
             if (ApprovedValues.Contains(Value) == false)
@@ -82,6 +84,7 @@ namespace A2_TextAdventure
             }
         }
 
+        // Determines room based on Value
         static void RoomAssignment()
         {
             if (Value == 0)
@@ -111,7 +114,8 @@ namespace A2_TextAdventure
                 Description = Fancy_Bedroom;
             }
         }
-         
+        
+        // Spits out descriptive strings
         static void Talker()
         {
             Console.WriteLine("You are in the " + Room);
