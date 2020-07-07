@@ -92,7 +92,6 @@ namespace A2_TextAdventure
                 Room = "Entrance Hall";
                 Description = Entrance_Hall;
             }
-
             else if (Value == 1)
             {
                 Room = "Living Room";
