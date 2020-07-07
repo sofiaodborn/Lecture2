@@ -76,7 +76,7 @@ namespace A2_TextAdventure
         {
             if (ApprovedValues.Contains(Value) == false)
             {
-                Console.WriteLine("Error. You are going in the wrong direction try again.\n");
+                Console.WriteLine("Cannot move in that direction, try again.\n");
                 Value = ReverseValue;
             }
         }
